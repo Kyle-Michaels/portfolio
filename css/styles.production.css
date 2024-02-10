@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 2 version
+* Browsers: last 4 version
 */
 
 /*
@@ -22,10 +22,27 @@ Sun-color-3: #f76414
 */
 
 /* Establish Variables */
+:root {
+    --primary-color: #357b70;
+    --secondary-color: #e0b354;
+    --tertiary-color: #800080;
+    --text-color-dark: #2b2b2b;
+    --text-color-light: #fff;
+    --border-bottom-color: rgba(0, 0, 0, 0.3);
+    --grid-box-color: #d3d3d3;
+    --sun-color-1: #edc655;
+    --sun-color-2: #fcffad;
+    --sun-color-3: #f76414;
+    --header-font-weight: 700;
+}
 
 * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+}
+
+main {
+    padding: 2%;
 }
 
 body {
@@ -37,21 +54,21 @@ body {
 
 h1 {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: var(--header-font-weight);
 }
 
 h2 {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: var(--header-font-weight);
 }
 
 h3 {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: var(--header-font-weight);
 }
 
 a{
-    color: #357b70;
+    color: var(--primary-color);
 }
 
 a:hover, a:focus {
@@ -59,36 +76,24 @@ a:hover, a:focus {
 }
 
 a:visited {
-    color: #800080;
+    color: var(--tertiary-color);
 }
 
 a:active {
-    color: #e0b354;
+    color: var(--secondary-color);
 }
 
-button {
+button, .button {
     border: none;
     font-family: inherit;
-    background-color: #357b70;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid var(--border-bottom-color);
     -webkit-transition: opacity 0.2s;
-    transition: opacity 0.2s;
-}
-
-.button {
-    border: none;
-    font-family: inherit;
-    background-color: #357b70;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    -webkit-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
     transition: opacity 0.2s;
 }
 
@@ -98,8 +103,8 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .button__secondary {
-    background-color: #e0b354;
-    color: #2b2b2b;
+    background-color: var(--secondary-color);
+    color: var(--text-color-dark);
 }
 
 .navigation-list__item--active {
@@ -187,7 +192,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     }
 
     .grid__item {
-        background-color: #d3d3d3;
+        background-color: var(--grid-box-color);
         width: auto;
         min-height: auto;
         margin: 0;
@@ -200,6 +205,13 @@ button:hover, button:focus, .button:hover, .button:focus {
         -ms-grid-row: 1;
         -ms-grid-row-span: 2;
         grid-row: 1 / 3;
+    }
+
+    .grid__item .grid-image {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
     }
 }
 
@@ -234,25 +246,25 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 @-webkit-keyframes color-change {
     0% {
-        fill: #edc655;
+        fill: var(--sun-color-1);
     }
     50% {
-        fill: #fcffad;
+        fill: var(--sun-color-2);
     }
     100% {
-        fill: #f76414;
+        fill: var(--sun-color-3);
     }
 }
 
 @keyframes color-change {
     0% {
-        fill: #edc655;
+        fill: var(--sun-color-1);
     }
     50% {
-        fill: #fcffad;
+        fill: var(--sun-color-2);
     }
     100% {
-        fill: #f76414;
+        fill: var(--sun-color-3);
     }
 }
 
@@ -285,6 +297,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .sun-rays {
     -webkit-transform-origin: 403px 43px;
+        -ms-transform-origin: 403px 43px;
             transform-origin: 403px 43px;
     -webkit-animation: 42s sun-spin infinite linear;
             animation: 42s sun-spin infinite linear;
