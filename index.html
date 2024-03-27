@@ -12,38 +12,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.production.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
     <header>
-        <!-- NavBar -->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand">
-                    <img src="./img/logo.jpg" class="logo" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#work">Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact Me</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar fixed-top" id="navbar">
+            <div class="logo">
+                <span class="box">
+                    Kyle Michaels
+                </span>
+            </div>
+            <div class="navItems">
+                <a href="#home">Home</a>
+                <a href="#toolkit">Toolkit</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
     </header>
@@ -51,381 +36,450 @@
     <main>
         <!-- Profile -->
         <section id="home">
-            <div class="container">
-                <div class="profile">
-                    <img src="img/profile_picture.jpg" alt="A photograph of me" class="profile-img">
-                    <div class="bio">
-                        <h1>Hello World - My Name is Kyle <br />Welcome to my Portfolio!</h1>
-                        <div class="bio-buttons">
-                            <a class="btn btn-primary" href="https://github.com/Kyle-Michaels">Check out some of my
-                                code</a>
-                            <a class="btn btn-primary" href="resume/Michales_Kyle Resume.pdf" download>Download my
-                                CV</a>
-                        </div>
+            <div class="profile">
+                <img src="./assets/img/profile_picture.jpg" alt="A photograph of me" class="profileImg"
+                    data-aos="fade-right" data-aos-delay="30" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                    data-aos-once="true">
+                <div class="bio" data-aos="fade-left" data-aos-delay="30" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out" data-aos-once="true">
+                    <h1>Hello World - My Name is Kyle <br />Welcome to my Portfolio!</h1>
+                    <p>
+                        I am a passionate and aspiring web developer on a unique journey from being a seasoned
+                        BMW technician to diving deep into the tech world. My background in the automotive industry
+                        has instilled in me a profound appreciation for precision, efficiency, and innovative
+                        problem-solving—skills I now apply to my web development projects. I'm currently advancing
+                        my coding skills and web technology expertise through a dedicated bootcamp program, aiming
+                        to specialize in crafting accessible, efficient online platforms. Some projects I have
+                        created include myFlix, an interactive movie database; Chat, a platform for real-time
+                        communication; and Meet, a serverless app for event scheduling. From precision as a BMW
+                        technician to developing detailed, user-centric web applications, I bring a unique
+                        perspective to web development.
+                    </p>
+                    <div class="bio-buttons">
+                        <a href="https://github.com/Kyle-Michaels">Check out some of my
+                            code</a>
+                        <a href="./assets/resume/Michales_Kyle_Resume.pdf" download>Resume</a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- About -->
-        <section id="about">
+        <!-- Toolkit -->
+        <section id="toolkit">
             <div class="container">
-                <div class="about-header">
-                    <h1>About</h1>
-                </div>
-                <div class="about">
-                    <div class="about-inner">
-                        <p> I'm thrilled to welcome you to my portfolio. I recently
-                            completed Career Foundry's
-                            Full Stack Web Development bootcamp, where I honed my skills in both front-end and back-end
-                            technologies. With a strong drive for continuous
-                            learning, I'm excited to embark on new projects and collaborations. </p>
-
+                <div class="row" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out" data-aos-once="true">
+                    <h1>Toolkit</h1>
+                    <div class="col-xl-2 col-md-3">
+                        <img src="./assets/img/toolkit/JS_logo.svg">
+                    </div>
+                    <div class="col-xl-2 col-md-3">
+                        <img src="./assets/img/toolkit/TS_logo.svg">
+                    </div>
+                    <div class="col-xl-2 col-md-3">
+                        <img src="./assets/img/toolkit/HTML_logo.svg">
+                    </div>
+                    <div class="col-xl-2 col-md-3">
+                        <img src="./assets/img/toolkit/CSS_logo.svg">
+                    </div>
+                    <div class="col-xl-2 col-md-3">
+                        <img src="./assets/img/toolkit/BS_logo.svg">
+                    </div>
+                    <div class="col-xl-2 col-md-3">
+                        <img src="./assets/img/toolkit/React_logo.svg">
+                    </div>
+                    <div class="col-xl-2 col-md-3">
+                        <img src="./assets/img/toolkit/Redux_logo.svg">
+                    </div>
+                    <div class="col-xl-2 col-md-3">
+                        <img src="./assets/img/toolkit/Angular_logo.svg">
+                    </div>
+                    <div class="col-xl-2 col-md-3">
+                        <img src="./assets/img/toolkit/Expo_logo.svg">
+                    </div>
+                    <div class="col-xl-2 col-md-3">
+                        <img src="./assets/img/toolkit/NodeJS_logo.svg">
+                    </div>
+                    <div class="col-xl-2 col-md-3">
+                        <img src="./assets/img/toolkit/Postman_logo.svg">
+                    </div>
+                    <div class="col-xl-2 col-md-3">
+                        <img src="./assets/img/toolkit/AWS_logo.svg">
+                    </div>
+                    <div class="col-xl-2 col-md-3">
+                        <img src="./assets/img/toolkit/Firebase_logo.svg">
+                    </div>
+                    <div class="col-xl-2 col-md-3">
+                        <img src="./assets/img/toolkit/Heroku_logo.svg">
+                    </div>
+                    <div class="col-xl-2 col-md-3">
+                        <img src="./assets/img/toolkit/Netlify_logo.svg">
+                    </div>
+                    <div class="col-xl-2 col-md-3">
+                        <img src="./assets/img/toolkit/PostgreSQL_logo.svg">
+                    </div>
+                    <div class="col-xl-2 col-md-3">
+                        <img src="./assets/img/toolkit/MongoDB_logo.svg">
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Work -->
-        <section id="work">
+        <!-- Projects -->
+        <section id="projects">
             <div class="container">
-                <div class="work-header">
+                <div class="row">
                     <h1>Projects</h1>
-                </div>
-                <div class="grid">
-                    <!-- Grid items will live here -->
-                    <div class="grid__item">
-                        <div class="card-header">
-                            <h2>Pokedex App</h2>
-                            <img src="img/Pokedex.JPG" class="grid-image">
-                            <p>
-                                A pokedex app made using JavaScript, HTML, and CSS.
-                                Pokemon information was sourced from PokeAPI
-                            </p>
-                        </div>
-                        <div class="card-buttons">
-                            <a class="btn btn-primary" href="https://github.com/Kyle-Michaels/Pokedex">Code</a>
-                            <a class="btn btn-primary" href="https://kyle-michaels.github.io/Pokedex/">Demo</a>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#pokedex">
-                                Tech
-                            </button>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="pokedex" tabindex="-1" aria-labelledby="pokedexLabel"
+                    <div class="col-md-12 col-xl-6">
+                        <card class="card" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000"
+                            data-aos-easing="ease-in-out" data-aos-once="true">
+                            <img src="./assets/img/chat.jpg" class="card-img-top" alt="Image of Chat">
+                            <div class="card-body">
+                                <h5 class="card-title">Chat</h5>
+                                <a href="https://github.com/Kyle-Michaels/chat">Code</a>
+                                <a href="./assets/case_study/chatCaseStudy.pdf">Case Study</a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#chatModal">More Info</a>
+                            </div>
+                        </card>
+                        <div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatModalLabel"
                             aria-hidden="true">
-                            <div class="modal-dialog">
+                            <div class="modal-dialog modal-xl">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="pokedexLabel">Pokedex Technologies</h1>
+                                        <h1 class="modal-title" id="chatModalLabel">Chat</h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
+                                        <p>Chat is a react native mobile messaging app that allows users to send
+                                            messages, images, and their location in a chat room.</p>
+                                        <h2>Function</h2>
                                         <ul>
-                                            <li>HTML</li>
-                                            <li>CSS</li>
-                                            <li>JavaScript</li>
-                                            <li>Bootstrap</li>
+                                            <li>User can select a username and background color.</li>
+                                            <li>User is able to enter a chat room and send messages, images, and
+                                                location to other users.</li>
+                                            <li>User is able to view previously sent messages offline</li>
                                         </ul>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
+                                        <br />
+                                        <div class="tech-stack row">
+                                            <p class="col-xl-2 col-md-4">React-Native</p>
+                                            <p class="col-xl-2 col-md-4">GiftedChat</p>
+                                            <p class="col-xl-2 col-md-4">AsyncStorage</p>
+                                            <p class="col-xl-2 col-md-4">Expo</p>
+                                            <p class="col-xl-2 col-md-4">Google Firebase</p>
+                                            <p class="col-xl-2 col-md-4">Google Firestore</p>
+                                        </div>
+                                        <br />
+                                        <div>
+                                            <a href="#" data-bs-dismiss="modal">Close</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="grid__item">
-                        <div class="card-header">
-                            <h2>myFlix API</h2>
-                            <img src="img/MovieApi.JPG" class="grid-image">
-                            <p>
-                                The server-side component of a movies database web application made using MongoDB,
-                                Express,
-                                and
-                                JavaScript/Node.js. This application provides users with access to information about
-                                different
-                                movies, directors, and genres. Users are able to sign up, update their personal
-                                information,
-                                and
-                                create a list of their favorite movies.
-                            </p>
-                        </div>
-                        <div class="card-buttons">
-                            <a class="btn btn-primary" href="https://github.com/Kyle-Michaels/movie_api">Code</a>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#myFlixApi">
-                                Tech
-                            </button>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="myFlixApi" tabindex="-1" aria-labelledby="myFlixApiLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="myFlixApiLabel">myFlix Api Technologies
-                                        </h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <ul>
-                                            <li>Node.js</li>
-                                            <li>Express</li>
-                                            <li>MongoDB</li>
-                                            <li>Mongoose</li>
-                                            <li>JSONwebtoken</li>
-                                            <li>Passport</li>
-                                            <li>Cors</li>
-                                        </ul>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
+                    <div class="col-md-12 col-xl-6">
+                        <card class="card" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000"
+                            data-aos-easing="ease-in-out" data-aos-once="true">
+                            <img src="./assets/img/myFlixAngular.jpg" class="card-img-top" alt="Image of myFlixAngular">
+                            <div class="card-body">
+                                <h5 class="card-title">myFlix-Angular</h5>
+                                <a href="https://github.com/Kyle-Michaels/myFlix-Angular-client">Code</a>
+                                <a href="https://kyle-michaels.github.io/myFlix-Angular-client">Demo</a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#myFlixAngularModal">More Info</a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="grid__item">
-                        <div class="card-header">
-                            <h2>myFlix React</h2>
-                            <img src="img/myFlixReact.JPG" class="grid-image">
-                            <p>
-                                myFlix React is the client side of the myFlix API built with React. It allows users to
-                                create a
-                                profile, view movie details, and add movies to their favorites.
-                                myFlix React also contains a user profile page that allows users to edit their account
-                                details
-                                and
-                                view their favorite movies list.
-                            </p>
-                        </div>
-                        <div class="card-buttons">
-                            <a class="btn btn-primary" href="https://github.com/Kyle-Michaels/myFlix-client">Code</a>
-                            <a class="btn btn-primary" href="https://k-michaels-my-flix.netlify.app/">Demo</a>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#myFlixReact">
-                                Tech
-                            </button>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="myFlixReact" tabindex="-1" aria-labelledby="myFlixReactLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
+                        </card>
+                        <div class="modal fade" id="myFlixAngularModal" tabindex="-1"
+                            aria-labelledby="myFlixAngularModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="myFlixReactLabel">myFlix React Technologies
-                                        </h1>
+                                        <h1 class="modal-title" id="myFlixAngularModalLabel">myFlix-Angular</h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
+                                        <p>myFlix Angular is the client side of the myFlix API built with Angular. It
+                                            allows users to create a profile, view movie details, and add movies to
+                                            their favorites. myFlix Angular also contains a user profile page that
+                                            allows users to edit their account details and view their favorite movies
+                                            list.</p>
+                                        <h2>Function</h2>
                                         <ul>
-                                            <li>React</li>
-                                            <li>React-Bootsrtrap</li>
-                                            <li>React-Router</li>
-                                            <li>Bootstrap</li>
-                                        </ul>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid__item">
-                        <div class="card-header">
-                            <h2>Meet</h2>
-                            <img src="img/Meet.JPG" class="grid-image">
-                            <p>
-                                Meet is a serverless, progressive web application built with React using a test-driven
-                                development
-                                technique. This application uses the google calendar API to fetch upcoming events.
-                            </p>
-                        </div>
-                        <div class="card-buttons">
-                            <a class="btn btn-primary" href="https://github.com/kyle-michaels/meet">Code</a>
-                            <a class="btn btn-primary" href="https://kyle-michaels.github.io/meet">Demo</a>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#meet">
-                                Tech
-                            </button>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="meet" tabindex="-1" aria-labelledby="meetLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="meetLabel">Meet Technologies</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <ul>
-                                            <li>React</li>
-                                            <li>Recharts</li>
-                                            <li>Google OAuth</li>
-                                            <li>Puppeteer</li>
-                                            <li>JEST</li>
-                                            <li>Cucumber Gherkin</li>
-                                        </ul>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="grid__item">
-                        <div class="card-header">
-                            <h2>Chat</h2>
-                            <img src="img/Chat.jpg" class="grid-image">
-                            <p>
-                                Chat is a react native mobile messaging app that allows users to send messages, images,
-                                and
-                                their
-                                location in a chat room.
-                            </p>
-                        </div>
-                        <div class="grid-buttons">
-                            <a class="btn btn-primary" href="https://github.com/Kyle-Michaels/chat">Code</a>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chat">
-                                Tech
-                            </button>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="chat" tabindex="-1" aria-labelledby="chatLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="chatLabel">Chat Technologies</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <ul>
-                                            <li>React</li>
-                                            <li>React-Native
-                                                <ul>
-                                                    <li>Navigation</li>
-                                                    <li>NetInfo</li>
-                                                    <li>Stack</li>
-                                                    <li>Maps</li>
-                                                    <li>GiftedChat</li>
-                                                    <li>AsyncStorage</li>
-                                                </ul>
+                                            <li>A user can register or log in on the welcome page.</li>
+                                            <li>Once logged in users can view all of the movies store in the database.
                                             </li>
-                                            <li>Expo</li>
-                                            <ul>
-                                                <li>Location</li>
-                                                <li>ImagePicker</li>
-                                                <li>React-Native-Action-Sheet</li>
-                                            </ul>
-                                            <li>Google Firebase</li>
-                                            <ul>
-                                                <li>FireStore Database</li>
-                                                <li>Authentication</li>
-                                                <li>Storage</li>
-                                            </ul>
+                                            <li>Users can favorite or unfavorite a movie from the movie list view.</li>
+                                            <li>Users can view movie details by clicking the "Open" button on a movie
+                                                card.</li>
+                                            <li>Users can view their profile information, favorite movies list, and
+                                                update their user data on the profile page.</li>
                                         </ul>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
+                                        <br />
+                                        <div class="tech-stack row">
+                                            <p class="col-xl-2 col-md-4">Angular</p>
+                                            <p class="col-xl-2 col-md-4">Angular-Material</p>
+                                            <p class="col-xl-2 col-md-4">TypeScript</p>
+                                            <p class="col-xl-2 col-md-4">SCSS</p>
+                                            <p class="col-xl-2 col-md-4">TypeDoc</p>
+                                        </div>
+                                        <br />
+                                        <div>
+                                            <a href="#" data-bs-dismiss="modal">Close</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="grid__item">
-                        <div class="card-header">
-                            <h2>myFlix Angular</h2>
-                            <img src="img/myFlixAngular.JPG" class="grid-image">
-                            <p>
-                                myFlix Angular is the client side of the myFlix API built with Angular. It allows users
-                                to
-                                create a
-                                profile, view movie details, and add movies to their favorites.
-                                myFlix Angular also contains a user profile page that allows users to edit their account
-                                details
-                                and
-                                view their favorite movies list.
-                            </p>
-                        </div>
-                        <div class="card-buttons">
-                            <a class="btn btn-primary"
-                                href="https://github.com/Kyle-Michaels/myFlix-Angular-client">Code</a>
-                            <a class="btn btn-primary"
-                                href="https://kyle-michaels.github.io/myFlix-Angular-client">Demo</a>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#myFlixAngular">
-                                Tech
-                            </button>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="myFlixAngular" tabindex="-1" aria-labelledby="myFlixAngularLabel"
+                    <div class="col-md-12 col-xl-6">
+                        <card class="card" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000"
+                            data-aos-easing="ease-in-out" data-aos-once="true">
+                            <img src="./assets/img/myFlixApi.jpg" class="card-img-top" alt="Image of myFlixApi">
+                            <div class="card-body">
+                                <h5 class="card-title">myFlix-API</h5>
+                                <a href="https://github.com/Kyle-Michaels/movie_api">Code</a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#myFlixApiModal">More Info</a>
+                            </div>
+                        </card>
+                        <div class="modal fade" id="myFlixApiModal" tabindex="-1" aria-labelledby="myFlixApiModalLabel"
                             aria-hidden="true">
-                            <div class="modal-dialog">
+                            <div class="modal-dialog modal-xl">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="myFlixAngularLabel">myFlix Angular
-                                            Tech
-                                        </h1>
+                                        <h1 class="modal-title" id="myFlixApiModalLabel">myFlix-Api</h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
+                                        <p>The server-side component of a movies database web application made using
+                                            MongoDB, Express, and JavaScript/Node.js. This application provides users
+                                            with access to information about different movies, directors, and genres.
+                                            Users are able to sign up, update their personal information, and create a
+                                            list of their favorite movies.</p>
+                                        <h2>Function</h2>
                                         <ul>
-                                            <li>Angular</li>
-                                            <li>Angular Material</li>
-                                            <li>TypeScript</li>
-                                            <li>SCSS</li>
-                                            <li>TypeDoc</li>
+                                            <li>Users can request a list of all movies stored.</li>
+                                            <li>Users can request information of a movie by title.</li>
+                                            <li>Users can request data about a genre by genre name.</li>
+                                            <li>Users can request data about a director by director name.</li>
+                                            <li>Users can create an account.</li>
+                                            <li>Users can update user data based on username.</li>
+                                            <li>Users can add or remove a movie from their favorites list</li>
+                                            <li>Users can de-register their account.</li>
                                         </ul>
+                                        <br />
+                                        <div class="tech-stack row">
+                                            <p class="col-xl-2 col-md-4">Node.Js</p>
+                                            <p class="col-xl-2 col-md-4">Express</p>
+                                            <p class="col-xl-2 col-md-4">MongoDB</p>
+                                            <p class="col-xl-2 col-md-4">Mongoose</p>
+                                            <p class="col-xl-2 col-md-4">JSONwebtoken</p>
+                                            <p class="col-xl-2 col-md-4">Passport</p>
+                                            <p class="col-xl-2 col-md-4">Cors</p>
+                                        </div>
+                                        <br />
+                                        <div>
+                                            <a href="#" data-bs-dismiss="modal">Close</a>
+                                        </div>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xl-6">
+                        <card class="card" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000"
+                            data-aos-easing="ease-in-out" data-aos-once="true">
+                            <img src="./assets/img/meet.jpg" class="card-img-top" alt="Image of Meet">
+                            <div class="card-body">
+                                <h5 class="card-title">Meet</h5>
+                                <a href="https://github.com/Kyle-Michaels/meet">Code</a>
+                                <a href="https://kyle-michaels.github.io/meet/">Demo</a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#meetModal">More Info</a>
+                            </div>
+                        </card>
+                        <div class="modal fade" id="meetModal" tabindex="-1" aria-labelledby="meetModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title" id="meetModalLabel">Meet</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Meet is a serverless, progressive web application built with React using a
+                                            test-driven development technique. This application uses the google calendar
+                                            API to fetch upcoming events.</p>
+                                        <h2>Function</h2>
+                                        <ul>
+                                            <li>Users can log in through Google's OAuthorization</li>
+                                            <li>Users are able to download this app to their desktop or mobile phone.
+                                            </li>
+                                            <li>Users can view upcoming events that are stored in a google calendar.
+                                            </li>
+                                            <li>Users can change the number of events displayed at a time.</li>
+                                            <li>Users are able to select a city to search for events in that city.</li>
+                                            <li>Users can view events offline if they have been viewed previously while
+                                                online.</li>
+                                        </ul>
+                                        <br />
+                                        <div class="tech-stack row">
+                                            <p class="col-xl-2 col-md-4">React</p>
+                                            <p class="col-xl-2 col-md-4">ReCharts</p>
+                                            <p class="col-xl-2 col-md-4">Google OAuth</p>
+                                            <p class="col-xl-2 col-md-4">Puppeteer</p>
+                                            <p class="col-xl-2 col-md-4">JEST</p>
+                                            <p class="col-xl-2 col-md-4">Cucumber Gherkin</p>
+                                        </div>
+                                        <br />
+                                        <div>
+                                            <a href="#" data-bs-dismiss="modal">Close</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xl-6">
+                        <card class="card" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000"
+                            data-aos-easing="ease-in-out" data-aos-once="true">
+                            <img src="./assets/img/myFlixReact.jpg" class="card-img-top" alt="Image of myFlixReact">
+                            <div class="card-body">
+                                <h5 class="card-title">myFlix-React</h5>
+                                <a href="https://github.com/Kyle-Michaels/myFlix-client">Code</a>
+                                <a href="https://k-michaels-my-flix.netlify.app/">Demo</a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#myFlixReactModal">More Info</a>
+                            </div>
+                        </card>
+                        <div class="modal fade" id="myFlixReactModal" tabindex="-1"
+                            aria-labelledby="myFlixReactModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title" id="myFlixReactModalLabel">myFlix-React</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>myFlix React is the client side of the myFlix API built with React. It allows
+                                            users to create a profile, view movie details, and add movies to their
+                                            favorites. myFlix React also contains a user profile page that allows users
+                                            to edit their account details and view their favorite movies list.</p>
+                                        <h2>Function</h2>
+                                        <ul>
+                                            <li>A user can register or log in on the welcome page.</li>
+                                            <li>Once logged in users can view all of the movies store in the database.
+                                            </li>
+                                            <li>Users can favorite or unfavorite a movie from the movie list view.</li>
+                                            <li>Users can view movie details by clicking the "Open" button on a movie
+                                                card.</li>
+                                            <li>Users can view their profile information, favorite movies list, and
+                                                update their user data on the profile page.</li>
+                                        </ul>
+                                        <br />
+                                        <div class="tech-stack row">
+                                            <p class="col-xl-2 col-md-4">React</p>
+                                            <p class="col-xl-2 col-md-4">React-Bootstrap</p>
+                                            <p class="col-xl-2 col-md-4">React-Router</p>
+                                            <p class="col-xl-2 col-md-4">Bootstrap</p>
+                                        </div>
+                                        <br />
+                                        <div>
+                                            <a href="#" data-bs-dismiss="modal">Close</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xl-6">
+                        <card class="card" data-aos="fade-up" data-aos-delay="40" data-aos-duration="1000"
+                            data-aos-easing="ease-in-out" data-aos-once="true">
+                            <img src="./assets/img/pokedex.jpg" class="card-img-top" alt="Image of Pokedex">
+                            <div class="card-body">
+                                <h5 class="card-title">Pokedex</h5>
+                                <a href="https://github.com/Kyle-Michaels/Pokedex">Code</a>
+                                <a href="https://kyle-michaels.github.io/Pokedex/">Demo</a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#pokedexModal">More Info</a>
+                            </div>
+                        </card>
+                        <div class="modal fade" id="pokedexModal" tabindex="-1" aria-labelledby="pokedexModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title" id="pokedexModalLabel">Pokedex</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>This pokedex app displays a list of pokemon that when clicked will bring up a
+                                            modal displaying more information about the selected pokemon.</p>
+                                        <h2>Function</h2>
+                                        <ul>
+                                            <li>Clicking on a pokemon will open a modal with more information on the
+                                                selected pokemon.</li>
+                                            <li>Users are able to search for a specific pokemon.</li>
+                                        </ul>
+                                        <br />
+                                        <div class="tech-stack row">
+                                            <p class="col-xl-2 col-md-4">HTML</p>
+                                            <p class="col-xl-2 col-md-4">CSS</p>
+                                            <p class="col-xl-2 col-md-4">JavaScript</p>
+                                            <p class="col-xl-2 col-md-4">Bootstrap</p>
+                                        </div>
+                                        <br />
+                                        <div>
+                                            <a href="#" data-bs-dismiss="modal">Close</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
         <!-- Contact -->
         <section id="contact">
-            <div class="container">
+            <div class="footer" data-aos="fade-down" data-aos-delay="30" data-aos-duration="1000"
+                data-aos-easing="ease-in-out" data-aos-once="true">
                 <div class="contact">
-                    <div class="contact-inner">
-                        <h1>Kyle Michaels</h1>
-                        <p>Email: kyle.michaels@gmail.com</p>
-                        <div class="social-media">
-                            <a href="https://github.com/Kyle-Michaels"><img src="img/Github_icon.svg" alt="Github"></a>
-                            <a href="https://twitter.com/KyleMichaelsJS"><img src="img/twitter_icon.svg"
-                                    alt="Twitter"></a>
-                            <a href="https://www.linkedin.com/in/k-michaels/"><img src="img/Linkedin_icon.svg"
-                                    alt="LinkedIn"></a>
-                            <a href="https://medium.com/@kyle.michaels"><img src="img/Medium_icon.svg" alt="Medium"></a>
-                        </div>
+                    <h1>Contact Me!</h1>
+                    <p>I am based in Irvine and am open to remote roles.<br />Feel free to contact me via email or
+                        LinkedIn.
+                    </p>
+                    <br>
+                    <p class="contactInfo">
+                        Kyle Michaels
+                        <br />
+                        Irvine, California
+                        <br />
+                        Email: <a href="mailto:kyle.michaels@gmail.com">Kyle.Michaels@gmail.com</a>
+                    </p>
+                    <div class="social-media">
+                        <a href="https://github.com/Kyle-Michaels"><img src="./assets/img/Github_icon.svg"
+                                alt="Github"></a>
+                        <a href="https://twitter.com/KyleMichaelsJS"><img src="./assets/img/twitter_icon.svg"
+                                alt="Twitter"></a>
+                        <a href="https://www.linkedin.com/in/k-michaels/"><img src="./assets/img/Linkedin_icon.svg"
+                                alt="LinkedIn"></a>
+                        <a href="https://medium.com/@kyle.michaels"><img src="./assets/img/Medium_icon.svg"
+                                alt="Medium"></a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <script src="js/scripts.js"></script>
     <script src="js/tota11y.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
