@@ -16,19 +16,51 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
-<body>
+<body class="body">
     <header>
-        <nav class="navbar fixed-top" id="navbar">
+        <!-- <nav class="navbar fixed-top" id="navbar">
             <div class="logo">
                 <span class="box">
                     Kyle Michaels
                 </span>
             </div>
-            <div class="navItems">
+            <div class="navItems collapse navbar-collapse" id="navbarSupportedContent">
                 <a href="#home">Home</a>
                 <a href="#toolkit">Toolkit</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav> -->
+
+        <nav class="navbar fixed-top navbar-expand-xl" id="navbar">
+            <div class="container-fluid">
+                <div class="logo"><span class="box">Kyle Michaels</span></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#toolkit">Toolkit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -37,9 +69,9 @@
         <!-- Profile -->
         <section id="home">
             <div class="profile">
-                <img src="./assets/img/profile_picture.jpg" alt="A photograph of me" class="profileImg"
-                    data-aos="fade-right" data-aos-delay="30" data-aos-duration="1000" data-aos-easing="ease-in-out"
-                    data-aos-once="true">
+                <img src="./assets/img/profile_picture.jpg" alt="A photograph of me"
+                    class="profileImg d-md-none d-lg-block" data-aos="fade-right" data-aos-delay="30"
+                    data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
                 <div class="bio" data-aos="fade-left" data-aos-delay="30" data-aos-duration="1000"
                     data-aos-easing="ease-in-out" data-aos-once="true">
                     <h1>Hello World - My Name is Kyle <br />Welcome to my Portfolio!</h1>
@@ -69,55 +101,55 @@
                 <div class="row" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000"
                     data-aos-easing="ease-in-out" data-aos-once="true">
                     <h1>Toolkit</h1>
-                    <div class="col-xl-2 col-md-3">
+                    <div class="col-xl-1 col-md-2">
                         <img src="./assets/img/toolkit/JS_logo.svg">
                     </div>
-                    <div class="col-xl-2 col-md-3">
+                    <div class="col-xl-1 col-md-2">
                         <img src="./assets/img/toolkit/TS_logo.svg">
                     </div>
-                    <div class="col-xl-2 col-md-3">
+                    <div class="col-xl-1 col-md-2">
                         <img src="./assets/img/toolkit/HTML_logo.svg">
                     </div>
-                    <div class="col-xl-2 col-md-3">
+                    <div class="col-xl-1 col-md-2">
                         <img src="./assets/img/toolkit/CSS_logo.svg">
                     </div>
-                    <div class="col-xl-2 col-md-3">
+                    <div class="col-xl-1 col-md-2">
                         <img src="./assets/img/toolkit/BS_logo.svg">
                     </div>
-                    <div class="col-xl-2 col-md-3">
+                    <div class="col-xl-1 col-md-2">
                         <img src="./assets/img/toolkit/React_logo.svg">
                     </div>
-                    <div class="col-xl-2 col-md-3">
+                    <div class="col-xl-1 col-md-2">
                         <img src="./assets/img/toolkit/Redux_logo.svg">
                     </div>
-                    <div class="col-xl-2 col-md-3">
+                    <div class="col-xl-1 col-md-2">
                         <img src="./assets/img/toolkit/Angular_logo.svg">
                     </div>
-                    <div class="col-xl-2 col-md-3">
+                    <div class="col-xl-1 col-md-2">
                         <img src="./assets/img/toolkit/Expo_logo.svg">
                     </div>
-                    <div class="col-xl-2 col-md-3">
+                    <div class="col-xl-1 col-md-2">
                         <img src="./assets/img/toolkit/NodeJS_logo.svg">
                     </div>
-                    <div class="col-xl-2 col-md-3">
+                    <div class="col-xl-1 col-md-2">
                         <img src="./assets/img/toolkit/Postman_logo.svg">
                     </div>
-                    <div class="col-xl-2 col-md-3">
+                    <div class="col-xl-1 col-md-2">
                         <img src="./assets/img/toolkit/AWS_logo.svg">
                     </div>
-                    <div class="col-xl-2 col-md-3">
+                    <div class="col-xl-1 col-md-2">
                         <img src="./assets/img/toolkit/Firebase_logo.svg">
                     </div>
-                    <div class="col-xl-2 col-md-3">
+                    <div class="col-xl-1 col-md-2">
                         <img src="./assets/img/toolkit/Heroku_logo.svg">
                     </div>
-                    <div class="col-xl-2 col-md-3">
+                    <div class="col-xl-1 col-md-2">
                         <img src="./assets/img/toolkit/Netlify_logo.svg">
                     </div>
-                    <div class="col-xl-2 col-md-3">
+                    <div class="col-xl-1 col-md-2">
                         <img src="./assets/img/toolkit/PostgreSQL_logo.svg">
                     </div>
-                    <div class="col-xl-2 col-md-3">
+                    <div class="col-xl-1 col-md-2">
                         <img src="./assets/img/toolkit/MongoDB_logo.svg">
                     </div>
                 </div>
@@ -125,9 +157,10 @@
         </section>
         <!-- Projects -->
         <section id="projects">
-            <div class="container">
+            <div class="container projects">
                 <div class="row">
-                    <h1>Projects</h1>
+                    <h1 data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                        data-aos-once="true">Projects</h1>
                     <div class="col-md-12 col-xl-6">
                         <card class="card" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000"
                             data-aos-easing="ease-in-out" data-aos-once="true">
@@ -160,12 +193,12 @@
                                         </ul>
                                         <br />
                                         <div class="tech-stack row">
-                                            <p class="col-xl-2 col-md-4">React-Native</p>
-                                            <p class="col-xl-2 col-md-4">GiftedChat</p>
-                                            <p class="col-xl-2 col-md-4">AsyncStorage</p>
-                                            <p class="col-xl-2 col-md-4">Expo</p>
-                                            <p class="col-xl-2 col-md-4">Google Firebase</p>
-                                            <p class="col-xl-2 col-md-4">Google Firestore</p>
+                                            <p class="col-xl-2 col-md-6">React-Native</p>
+                                            <p class="col-xl-2 col-md-6">GiftedChat</p>
+                                            <p class="col-xl-2 col-md-6">AsyncStorage</p>
+                                            <p class="col-xl-2 col-md-6">Expo</p>
+                                            <p class="col-xl-2 col-md-6">Google Firebase</p>
+                                            <p class="col-xl-2 col-md-6">Google Firestore</p>
                                         </div>
                                         <br />
                                         <div>
@@ -215,11 +248,11 @@
                                         </ul>
                                         <br />
                                         <div class="tech-stack row">
-                                            <p class="col-xl-2 col-md-4">Angular</p>
-                                            <p class="col-xl-2 col-md-4">Angular-Material</p>
-                                            <p class="col-xl-2 col-md-4">TypeScript</p>
-                                            <p class="col-xl-2 col-md-4">SCSS</p>
-                                            <p class="col-xl-2 col-md-4">TypeDoc</p>
+                                            <p class="col-xl-2 col-md-6">Angular</p>
+                                            <p class="col-xl-2 col-md-6">Angular-Material</p>
+                                            <p class="col-xl-2 col-md-6">TypeScript</p>
+                                            <p class="col-xl-2 col-md-6">SCSS</p>
+                                            <p class="col-xl-2 col-md-6">TypeDoc</p>
                                         </div>
                                         <br />
                                         <div>
@@ -268,13 +301,13 @@
                                         </ul>
                                         <br />
                                         <div class="tech-stack row">
-                                            <p class="col-xl-2 col-md-4">Node.Js</p>
-                                            <p class="col-xl-2 col-md-4">Express</p>
-                                            <p class="col-xl-2 col-md-4">MongoDB</p>
-                                            <p class="col-xl-2 col-md-4">Mongoose</p>
-                                            <p class="col-xl-2 col-md-4">JSONwebtoken</p>
-                                            <p class="col-xl-2 col-md-4">Passport</p>
-                                            <p class="col-xl-2 col-md-4">Cors</p>
+                                            <p class="col-xl-2 col-md-6">Node.Js</p>
+                                            <p class="col-xl-2 col-md-6">Express</p>
+                                            <p class="col-xl-2 col-md-6">MongoDB</p>
+                                            <p class="col-xl-2 col-md-6">Mongoose</p>
+                                            <p class="col-xl-2 col-md-6">JSONwebtoken</p>
+                                            <p class="col-xl-2 col-md-6">Passport</p>
+                                            <p class="col-xl-2 col-md-6">Cors</p>
                                         </div>
                                         <br />
                                         <div>
@@ -323,12 +356,12 @@
                                         </ul>
                                         <br />
                                         <div class="tech-stack row">
-                                            <p class="col-xl-2 col-md-4">React</p>
-                                            <p class="col-xl-2 col-md-4">ReCharts</p>
-                                            <p class="col-xl-2 col-md-4">Google OAuth</p>
-                                            <p class="col-xl-2 col-md-4">Puppeteer</p>
-                                            <p class="col-xl-2 col-md-4">JEST</p>
-                                            <p class="col-xl-2 col-md-4">Cucumber Gherkin</p>
+                                            <p class="col-xl-2 col-md-6">React</p>
+                                            <p class="col-xl-2 col-md-6">ReCharts</p>
+                                            <p class="col-xl-2 col-md-6">Google OAuth</p>
+                                            <p class="col-xl-2 col-md-6">Puppeteer</p>
+                                            <p class="col-xl-2 col-md-6">JEST</p>
+                                            <p class="col-xl-2 col-md-6">Cucumber Gherkin</p>
                                         </div>
                                         <br />
                                         <div>
@@ -377,10 +410,10 @@
                                         </ul>
                                         <br />
                                         <div class="tech-stack row">
-                                            <p class="col-xl-2 col-md-4">React</p>
-                                            <p class="col-xl-2 col-md-4">React-Bootstrap</p>
-                                            <p class="col-xl-2 col-md-4">React-Router</p>
-                                            <p class="col-xl-2 col-md-4">Bootstrap</p>
+                                            <p class="col-xl-2 col-md-6">React</p>
+                                            <p class="col-xl-2 col-md-6">React-Bootstrap</p>
+                                            <p class="col-xl-2 col-md-6">React-Router</p>
+                                            <p class="col-xl-2 col-md-6">Bootstrap</p>
                                         </div>
                                         <br />
                                         <div>
@@ -422,10 +455,10 @@
                                         </ul>
                                         <br />
                                         <div class="tech-stack row">
-                                            <p class="col-xl-2 col-md-4">HTML</p>
-                                            <p class="col-xl-2 col-md-4">CSS</p>
-                                            <p class="col-xl-2 col-md-4">JavaScript</p>
-                                            <p class="col-xl-2 col-md-4">Bootstrap</p>
+                                            <p class="col-xl-2 col-md-6">HTML</p>
+                                            <p class="col-xl-2 col-md-6">CSS</p>
+                                            <p class="col-xl-2 col-md-6">JavaScript</p>
+                                            <p class="col-xl-2 col-md-6">Bootstrap</p>
                                         </div>
                                         <br />
                                         <div>
